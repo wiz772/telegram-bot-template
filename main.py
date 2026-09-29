@@ -29,7 +29,7 @@ def create_app():
     return app
 
 def start_app(app):
-    commands_handler.handle_commands(app)
+    commands_handler.register_commands(app)
     app.run_polling()
 
 def main():
